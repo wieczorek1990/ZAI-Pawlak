@@ -1,0 +1,76 @@
+\documentclass{report}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{url}
+%Spell check: aspell -t -l en -c ./zai.tex
+
+\title{
+	Sklepy internetowe
+}
+\author{
+	Łukasz Wieczorek\\
+	\begin{tabular}{rl}
+	E-mail & \texttt{wieczorek1990@gmail.com}\\
+	\end{tabular}
+}
+
+\begin{document}
+\maketitle
+\section{Definicja}
+\emph{,,Sklep internetowy -- serwis internetowy dający możliwość zamawiania produktów przez Internet, jedna z form handlu elektronicznego.''}\cite{wiki:sklep}
+Sklep internetowy powinien posiadać:
+\begin{itemize}
+\item katalog produktów,
+\item wirtualny koszyk,
+\item formularz zawierania transakcji,
+\item panel administracyjny dla pracowników sklepu,
+\item opcjonalnie: system raportowania.
+\end{itemize}
+Przeciętna ścieżka klienta w sklepie internetowym wygląda tak:
+\begin{itemize}
+\item odwiedza stronę główną sklepu,
+\item wybiera produkty,
+\item wybiera metodę płatności,
+\item akceptuje zamówienie.
+\end{itemize}
+Największy wpływ na konfigurację sklepu internetowego mają środki pieniężne. Zakładając sklep internetowy powinniśmy odpowiedzieć sobie na pytania:
+\begin{itemize}
+\item Jaki mamy budżet?
+\item Jaki jest profil naszej aplikacji?
+\item Czy potrzebujemy własnego serwera, czy też zdamy się na zewnętrzny hosting?
+\item Czy oprogramowanie sklepu będzie pisane na zamówienie, czy skorzystamy z gotowych (płatnych lub darmowych) rozwiązań?
+\item Ilu użytkowników się spodziewamy?
+\item Czy system będzie generował skomplikowane raporty?
+\item Jaką formę marketingu wykorzystamy?
+\item Jak będzie wyglądać obsługa reklamacji?
+\item Jakie technologie wykorzystamy?
+\item Jaką wartość dodaną posiada nasz produkt?
+\end{itemize}
+Niektóre z darmowych rozwiązań dla e-commerce to: Magento, osCommerce, OpenCart, SpreeCommerce, PrestaShop.
+\section{Relacje w biznesie}
+Ze względu na to komu sprzedajemy nasze towary nasz sklep będzie działał w formule Business to Client, bądź Business to Business.
+\subsection{Business to Business}
+To ogół relacji między firmą a partnerami, pośrednikami, dostawcami, dystrybutorami oraz punktami
+sprzedaży i świadczenia usług wykorzystujący środki elektroniczne do zawierania transakcji. B2B są to
+transakcje kupna-sprzedaży dóbr i usług w obrocie między firmami za pomocą m.in.: katalogów produktów, aliansów zakupowych, rynków barterowych, pionowych. Głównym zadaniem B2B jest integracja łańcuchów dostaw.
+\subsection{Business to Client}
+Polega na sprzedaży produktów przez firmy konsumentom. Obejmuje wszelkie aspekty elektronicznego biznesu na płaszczyźnie kontaktów z indywidualnymi klientami poprzez: aukcje internetowe, sklepy internetowe, sprzedaż detaliczną usług. Zadaniami B2C są zdobywanie nabywców, zapewnienie wygodnego interfejsu, stworzenie wirtualnego miejsca sprzedaży produktów firmy.
+\subsection{Różnice}
+\begin{itemize}
+\item skala transakcji (większa na rynku przedsiębiorstw)
+\item liczba nabywców (większa na rynku konsumenckim)
+\item jakość informacji o produktach (większa na rynku przedsiębiorstw; logika vs emocje)
+\end{itemize}
+\section{Zarządzanie relacjami}
+Zarządzanie relacjami na poziomie klientów i partnerów pozwala w efekcie uzyskać większe zyski, stąd ich ważność.
+\subsection{Customer Relationship Management}
+CRM to: \emph{,,zestaw procedur i narzędzi istotnych w zarządzaniu kontaktami z klientami.''}\cite{wiki:crm}
+\subsection{Partner Relationship Management}
+PRM to: \emph{,,to zarządzanie relacjami z partnerami (firmami stowarzyszonymi) poprzez zapewnienie optymalnej struktury kanału sprzedaży.''}\cite{wiki:prm}
+\section{Electronic Data Interchange}
+Jest to: \emph{,,transfer biznesowych informacji transakcyjnych od komputera do komputera z wykorzystaniem standardowych, zaakceptowanych formatów komunikatów.''}\cite{wiki:edi} EDI ma na celu przyspieszenie i zwiększenie dokładności danych przekazywanych pomiędzy firmami poprzez delegację zadań przekazywania informacji systemom informatycznym.
+\bibliography{cite}{}
+\bibliographystyle{plain}
+\end{document}
